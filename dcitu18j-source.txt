@@ -1,0 +1,25 @@
+                           Upload Information Template for Hobbes.nmsu.edu
+                           ===============================================
+
+        Archive Filename:  dcitu18j-source.zip
+       Short Description:  Digital Camera Image Transfer Utility for OS/2
+        Long Description:  OS/2 PM application to allow serial port transfer of images from the following digital camera models:  Kodak DC25, Kodak DC120, Kodak DC200, Kodak DC210, Kodak DC215, Kodak DC220, Kodak DC240, Kodak DC260, Kodak DC265, Kodak DC280, Agfa ePhoto, Epson PhotoPC, Minolta Dimage, Nikon Coolpik, Olympus, Sanyo VPC/DSC, Sierra SD640 and Toshiba PDR-2.  This is the GPL'd source code to DCITU v1.8j.
+
+      Proposed directory
+           for placement:  /pub/os2/apps/mmedia/video/capture
+
+               Your name:  Stephane Charette
+           Email address:  stephanecharette@telus.net
+    Program contact name:  (same)
+   Program contact email:  (same)
+             Program URL:  http://charette.dyn.tj/
+
+      Would you like the
+   contact email address
+    included in listings?  yes
+
+Operating System/Version:  OS/2 v3.x and higher
+ Additional requirements:  supported digital camera
+
+                Replaces:  none
+

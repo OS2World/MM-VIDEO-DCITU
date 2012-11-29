@@ -1,0 +1,92 @@
+/*
+ * $Id: //devel/DCITU/OptionsCanvas.rc#5 $
+ *
+ * DCITU for OS/2 -- Digital Camera Image Transfer Utility for OS/2
+ * Copyright (C) 1997-2000 Stephane Charette, stephanecharette@telus.net
+ * Copyright (C) 2000-2002 C Code Run Consulting & Investments, Inc.
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or at
+ * your option, any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+ */
+
+#include "OptionsCanvas.h"
+
+rcinclude "OptionsCanvas.dlg"
+
+STRINGTABLE loadoncall discardable
+{
+   CB_CAMERA_TYPE             "select the camera type being used"
+   CK_ADVANCED_COM_PORT       "select this checkbox for advanced COM port selection"
+   SB_COM_PORT                "select the COM port to which your camera is connected"
+   EF_COM_PORT                "device name to use when opening the COM port"
+   SB_BAUD_RATE               "select the transfer rate supported by your camera"
+   SB_PAUSE_BETWEEN_COMMANDS  "see on-line help for important information on pause"
+   SB_TIMEOUT                 "see on-line help for important information on timeout"
+   CB_EXT_BUFFERS             "see on-line help for important information on buffers"
+   SB_RETRY_PARTIALS          "try to read the serial port multiple times if incomplete data is received"
+   SB_BAUD_RATE_PAUSE         "number of milliseconds to pause after changing the baud rate"
+
+   CK_IGNORE_MEMORY_CARD      "ignore images on the memory flash card"
+   CK_CONVERT_KDC_TO_JPG      "auto-convert Kodak DC120 .KDC files to .JPG format"
+   CK_USE_RAW_PATH            "see on-line help for important information on raw paths"
+   CK_REMEMBER_NUMBERING      "always remember the last image sequence number that was used"
+   SB_LAST_IMAGE_NUMBER       "the next available image sequence number"
+
+   CK_KEEP_THUMBNAILS         "keep minature thumbnail files of the images"
+   CK_ALTERNATE_STARTUP       "see on-line help for important information on startup"
+   CK_IGNORE_BREAK            "see on-line help for important information on BREAK"
+
+   SB_DTR                     "see on-line help for important information on serial lines"
+   CK_CTS                     "see on-line help for important information on serial lines"
+   CK_DSR                     "see on-line help for important information on serial lines"
+   CK_DCD                     "see on-line help for important information on serial lines"
+   CK_INPUT_DSR               "see on-line help for important information on serial lines"
+   CK_TRANSMIT_FLOW_CONTROL   "see on-line help for important information on serial lines"
+   CK_RECEIVE_FLOW_CONTROL    "see on-line help for important information on serial lines"
+   SB_RTS                     "see on-line help for important information on serial lines"
+   PB_RESET_SERIAL            "see on-line help for important information on serial lines"
+
+   CK_USE_HIGHEST_PRIORITY    "see on-line help for important information on thread priority"
+   CK_CONNECT_ON_STARTUP      "auto-connect to camera when DCITU is first started"
+   CK_AUTO_DOWNLOAD_THUMBNAILS "auto-download thumbnail images when connected"
+   CK_4_BIT_THUMBNAIL         "auto-download 4-bit thumbnail images"
+   CK_24_BIT_THUMBNAIL        "auto-download 24-bit thumbnail images"
+   CK_AUTO_DOWNLOAD_IMAGES    "auto-download full images when connected"
+   CK_OVERWRITE_IMAGES        "overwrite an image if the file already exists"
+   CK_DELETE_IMAGES           "delete an image from the camera after a successful transfer"
+
+   EF_TRANSFER_DIR            "directory in which images will be saved"
+   CK_DELETE_FAILED_TRANSFERS "delete failed or empty image files from the image transfer directory"
+
+   CK_SCRIPT_AFTER_CONNECTION    "select to run the script after a connection is established"
+   CK_SCRIPT_AFTER_CONNECTION_FG "run this script in the foreground"
+   EF_SCRIPT_AFTER_CONNECTION    "insert %i to indicate the number of images in the camera"
+   CK_SCRIPT_AFTER_TRANSFER      "select to run the script after an image is transfered"
+   CK_SCRIPT_AFTER_TRANSFER_FG   "run this script in the foreground"
+   EF_SCRIPT_AFTER_TRANSFER      "insert %s to indicate the name of the image that was transfered"
+   CK_SCRIPT_AFTER_DELETE        "select to run the script after an image has been deleted"
+   CK_SCRIPT_AFTER_DELETE_FG     "run this script in the foreground"
+   EF_SCRIPT_AFTER_DELETE        "insert %s to indicate the name of the image that was deleted"
+   CK_SCRIPT_NO_MORE_IMAGES      "select to run the script after the last image is deleted from the camera"
+   CK_SCRIPT_NO_MORE_IMAGES_FG   "run this script in the foreground"
+// EF_SCRIPT_NO_MORE_IMAGES_FG   "...?"
+   CK_SCRIPT_AFTER_DISCONNECTING "select to run the script after disconnecting from the camera"
+   CK_SCRIPT_AFTER_DISCONNECTING_FG "run this script in the foreground"
+// CK_SCRIPT_AFTER_DISCONNECTING "...?"
+
+   EF_REGISTER_NAME           "name to which this copy of DCITU is registered"
+   EF_REGISTER_KEY            "registration key provided when DCITU was registered"
+   PB_REGISTER                "click to register this copy of DCITU"
+
+   PB_HELP                    "click to obtain additional help on the currently selected item"
+   PB_OK                      "click to accept current settings"
+   PB_CANCEL                  "click to cancel changes"
+}
+
